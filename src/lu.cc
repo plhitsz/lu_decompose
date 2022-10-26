@@ -12,6 +12,7 @@
 
 #include "field.h"
 #include "matrix.h"
+#include "swapper_matrix.h"
 
 int OctetFiniteField_test(int a, int b) {
   OctetFiniteField ff;
@@ -22,5 +23,7 @@ int OctetFiniteField_test(int a, int b) {
 
   MatrixOctet mat(2, 2);
   mat << 1, 2, 3, 4;
+
+  SwapperOctetMatrix test_mat;
   return 0;
 }
