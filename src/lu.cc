@@ -11,6 +11,7 @@
 #include "lu.h"
 
 #include "field.h"
+#include "matrix.h"
 
 int OctetFiniteField_test(int a, int b) {
   OctetFiniteField ff;
@@ -18,5 +19,8 @@ int OctetFiniteField_test(int a, int b) {
   ff.sub(1, 1);
   ff.mul(1, 1);
   ff.div(1, 1);
+
+  MatrixOctet mat(2, 2);
+  mat << 1, 2, 3, 4;
   return 0;
 }
